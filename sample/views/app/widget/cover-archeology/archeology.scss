@@ -1,0 +1,79 @@
+$colorBlack: #000;
+$height82:82px;
+.mp-page-archeology {
+    background-color: $colorBlack;
+    height: 100%;
+    .theme-bg {
+        width: 100%;
+        height: 240px;
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    nav {
+        background-color: $colorBlack;
+    }
+    ul {
+        background-color: $colorBlack;
+        overflow: hidden;
+        li, a {
+            display: block;
+            background-repeat: no-repeat;
+            background-size: 100% $height82;
+        }
+        li {
+            position: relative;
+            height: $height82;
+            margin-top: 10px;
+            opacity: 1;
+        }
+        a {
+            position: relative;
+            height: $height82;
+            outline: none;
+        }
+        .nav-animation {
+            -webkit-animation: flip 1s;
+        }
+        .shade {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: $height82;
+            opacity: 0.54;
+        }
+        .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            color: white;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+        }
+        h2 {
+            height: $height82;
+            overflow: hidden;
+            padding-left: 44px;
+            font-size: 1.8rem;
+            line-height: $height82;
+        }
+        .zh {
+            width: 90px;
+        }
+        .en {
+            padding-left: 15px;
+            font-weight: lighter;
+            font-size: 1.6rem;
+        }
+        li:nth-child(3n) .shade {
+            background-color: #532524;
+        }
+        li:nth-child(3n+1) .shade {
+            background-color: #2d0b0a;
+        }
+        li:nth-child(3n+2) .shade {
+            background-color: #031922;
+        }
+    }
+}

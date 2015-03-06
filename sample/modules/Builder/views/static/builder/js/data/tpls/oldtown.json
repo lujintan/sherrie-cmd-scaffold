@@ -1,0 +1,171 @@
+{
+    "index": {
+        "tpl": "oldtown",
+        "title": "古镇",
+        "style": {
+            "themeColor": "#5e7489",
+            "layout": "fullcolumn"
+        },
+        "navs": [{
+            "text": "景区门票",
+            "name": "tickets",
+            "action": {
+                "type": "module",
+                "value": "tickets"
+            }
+        }, {
+            "text": "景区介绍",
+            "name": "introduce",
+            "action": {
+                "type": "module",
+                "value": "introduce"
+            }
+        }, {
+            "text": "景区天气",
+            "name": "weather",
+            "action": {
+                "value": "weather",
+                "type": "module"
+            }
+        }, {
+            "text": "景区路线",
+            "name": "routes",
+            "action": {
+                "value": "routes",
+                "type": "module"
+            }
+        }, {
+            "text": "景区图片",
+            "name": "gallery",
+            "action": {
+                "type": "module",
+                "value": "gallery"
+            }
+        }, {
+            "text": "热门景点",
+            "name": "spotlist",
+            "action": {
+                "value": "spotlist",
+                "type": "module"
+            }
+        }, {
+            "text": "景区热力图",
+            "name": "heatmap",
+            "action": {
+                "value": "heatmap",
+                "type": "module"
+            }
+        }, {
+            "text": "景区导览",
+            "name": "tourguide",
+            "action": {
+                "type": "module",
+                "value": "tourguide"
+            }
+        }, {
+            "text": "我的订单",
+            "name": "ordercenter",
+            "action": {
+                "type": "module",
+                "value": "ordercenter"
+            }
+        }]
+    },
+    "modules": {
+        "introduce": {
+            "name": "西塘古镇",
+            "address": "浙江省嘉兴市嘉善县",
+            "traffic": "西塘镇交通极其方便，沪杭铁路，沪杭高速铁路，沪杭高速公路，申嘉湖高速公路，杭州湾跨海大桥北连接线，亭枫高速连接线，320国道，都穿境而过，乘坐汽车，高铁，火车均能到达，乘坐已于2010年10月26日通车的沪杭高铁，从嘉善到上海虹桥枢纽站仅需30分钟左右，从嘉善到嘉兴仅需15分钟，从嘉善至杭州只需35分钟左右。周边有上海虹桥机场、上海浦东机场、杭州萧山机场三大机场。西塘在嘉善市区北10公里处，乘坐公交快客前往20-30分钟就能到达",
+            "open": "05时00分 - 23时00分",
+            "best": "02月10日 - 次年10月31日",
+            "detail": "西塘古镇位于浙江省嘉善县，江浙沪三省交界处。古名斜塘，平川，距嘉善市区10公里。是吴地汉文化的千年水乡古镇，江南六大古镇之一。西塘全镇总面积83.61平方公里，其中古镇区面积1.04平方公里，人口近8.6万。西塘被誉为生活着的千年古镇。已被列入世界历史文化遗产预备名单，中国首批历史文化名镇，国家AAAA级景区",
+            "image": "http://bs.baidu.com/my-cms-files/cms_file_6e335738066d0a65f1be05686ef3cfbc"
+        },
+        "gallery": {
+            "from": "customer",
+            "source": {
+                "customer": {
+                    "items": [{
+                        "name": "西塘美景",
+                        "images": [{
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_08415f5c1c1d46a004f913b55b627ef7"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_eae9cdbdf8b8ab1afb005f70a22bb538"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_04ed32f911f1cd5821212a0c454f55a3"
+                        }]
+                    }, {
+                        "name": "西塘夜景",
+                        "images": [{
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_d7767fca86ac414a37cb7a91aa90ee3d"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_28a9c0122fb33295975c0437db8fbcd0"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_5e473348943e584a701f8dcee59b5239"
+                        }]
+                    }]
+                }
+            }
+        },
+        "tourguide": {
+            "image": "http://bs.baidu.com/my-cms-files/cms_file_11b2f18c2e7ac47d6da0d1e2b5dc0376"
+        },
+        "routes": {
+            "outerTraffic": "西塘镇交通极其方便，沪杭铁路，沪杭高速铁路，沪杭高速公路，申嘉湖高速公路，杭州湾跨海大桥北连接线，亭枫高速连接线，320国道，都穿境而过，乘坐汽车，高铁，火车均能到达，乘坐已于2010年10月26日通车的沪杭高铁，从嘉善到上海虹桥枢纽站仅需30分钟左右，从嘉善到嘉兴仅需15分钟，从嘉善至杭州只需35分钟左右。周边有上海虹桥机场、上海浦东机场、杭州萧山机场三大机场。西塘在嘉善市区北10公里处，乘坐公交快客前往20-30分钟就能到达",
+            "innerTraffic": "无",
+            "tourAddress": {
+                "address": {
+                    "province": "29_浙江省",
+                    "city": "334_嘉兴市",
+                    "regional": "2585_嘉善县",
+                    "street": "西塘古镇"
+                },
+                "point": {
+                    "lat": 30.950168,
+                    "lng": 120.899532
+                }
+            }
+        },
+        "spotlist": {
+            "from": "customer",
+            "source": {
+                "customer": {
+                    "items": [{
+                        "name": "烟雨长廊",
+                        "image": "http://bs.baidu.com/my-cms-files/cms_file_76f6d22325e8a9770ce77e0c800eb17d",
+                        "brief": "是西塘古镇最独特的风景，连绵的风雨长廊，却是让人流连忘返。 枕水而建，慢慢的走，慢慢的感受",
+                        "introduce": "廊棚也叫雨廊，不少江南古镇都有，外观看来就是有木柱支撑、带有瓦片屋顶的街道。而西塘的廊棚最有特色，因为只要你在古镇内沿河行走，头顶上总会有廊棚为你遮风挡雨。尤其是在雨天，走在廊棚下听着雨声淅沥，赏廊外迷蒙的景色，意境浓郁，因此西塘的廊棚有着“烟雨长廊”的美名。西塘的廊棚大多为临河而建，走在廊中可以逛逛沿街各色店铺，另一边则是河道，时而有摇橹船载着游客缓缓而过。有的廊棚还设有靠背长椅，可供人休息，河两岸的廊棚之间还有数座石桥相连。漫步在廊棚下，或找一家沿河茶坊搭两把椅子坐在河边…"
+                    }, {
+                        "name": "送子来凤桥",
+                        "image": "http://bs.baidu.com/my-cms-files/cms_file_cfdc40e0106a211e89e8abed4f63c221",
+                        "brief": "中国“四大名园”之一，说是与北京颐和园、承德避暑山庄齐名，但规模就小很多",
+                        "introduce": "送子来凤桥位于西塘风景区小桐街东侧，当地人也叫它“晴雨桥”。一是它连接烟雨长廊，处在古镇游览的核心位置；二是由于它的造型别致，又有“送子来凤”的寓意，是西塘众多古桥中游人必到的一座。这是一座三孔石板桥，宽约10米，桥顶有棚可以遮阳避雨，两侧有护栏和长条石凳，走累了可以在这儿小憩一下，看景拍照都很不错。尤为值得一提的是，桥中间的花墙将整座桥分为南北两边。南边是阶梯，寓意男子步步高升；北边是斜坡，适合古代女子三寸金莲迈小步，寓意持家稳当。所以至今仍流传着“凡新婚情侣过此桥，南则送子，北则来凤”的传说"
+                    }, {
+                        "name": "皮石弄",
+                        "image": "http://bs.baidu.com/my-cms-files/cms_file_70c84f670a2fbe6e56bd05b5ff09c1d7",
+                        "brief": "石皮弄在西塘镇下西街，是王家“种福堂”和“尊闻堂”之间一条细窄的弄堂",
+                        "introduce": "石皮弄在西塘镇下西街，是王家“种福堂”和“尊闻堂”之间一条细窄的弄堂，全长68米，由216块厚度仅三厘米的石板铺就而成。据考证，弄内石板路下是一条使全弄雨天不积水的下水道，薄如皮的石板作为下水道的表皮故称石皮弄。石皮弄是整个古镇最深最窄也是最长的弄堂，弄宽仅一米，弄口最窄处仅0.8米，如要两人反向而遇，必要侧身擦肩方能通过 ，若是两个胖子怕是挤着肚皮也不一定过得去。在石皮弄里望天，苍苍蓝天变成狭长一道，故这里也被称为西塘的“一线天”。石皮弄虽闻名，但因只是一条狭长的弄道，所以游人并不会过多"
+                    }]
+                }
+            }
+        },
+        "heatmap": {
+            "province": "浙江",
+            "city": "嘉兴",
+            "poiname": "西塘",
+            "centerPoint": "120.8944375,30.947482",
+            "x": 120.8944375,
+            "y": 30.947482
+        },
+        "weather": {
+            "province": "浙江",
+            "city": "嘉兴"
+        }
+    }
+}

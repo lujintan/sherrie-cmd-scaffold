@@ -1,0 +1,84 @@
+@mixin layerColor($num, $color) {
+    .color-#{$num} {
+        background-color: $color;
+    }
+}
+
+.mp-spot-landscape {
+    height: 100%;
+    background: no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    .swiper-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 180px;
+
+
+        ul {
+            position: relative;
+            left: 0;
+            height: 100%;
+
+            li {
+                width: 78px;
+                height: 100%;
+                float: left;
+
+                a {
+                    display: block;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    width: 78px;
+                    height: 100%;
+                    background-size: cover;
+                    position: relative;
+
+                    span {
+                        width: 78px;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0.4;
+                        z-index: 2;
+                    }
+
+                    @include layerColor(0,#054667);
+                    @include layerColor(1,#580202);
+                    @include layerColor(2,#5e2503);
+                    @include layerColor(3,#013823);
+                    @include layerColor(4,#2d0355);
+
+                    div {
+                        width: 80px;
+                        padding-top: 20px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 3;
+                        color: #fff;
+                        text-align: center;
+
+                        h2,h3 {
+                            font-size: 14px;
+                            font-weight: normal;
+                            margin-top: 10px;
+                            padding:0 5px;
+                        }
+                        h3 {
+                            font-size:12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-slide {
+        opacity: 0.2;
+        -webkit-transform: translate3d(64px,0,0);
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "sherrie-cmd-scaffold",
+    "version": "0.0.3",
+    "description": "create the base code",
+    "main": "./main.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/lujintan/sherrie-cmd-scaffold.git"
+    },
+    "keywords": [
+        "sherrie",
+        "command",
+        "scaffold"
+    ],
+    "auth": "lujintan",
+    "email": "yingxuetan@163.com",
+    "license": "https://github.com/lujintan/sherrie-cmd-scaffold/blob/master/LICENSE",
+    "bugs": {
+        "url": "https://github.com/lujintan/sherrie-cmd-scaffold/issues"
+    },
+    "homepage": "https://github.com/lujintan/sherrie-cmd-scaffold",
+    "dependencies": {
+        "filefactory": "*",
+        "q": "1.2.0"
+    }
+}

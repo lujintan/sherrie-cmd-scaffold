@@ -1,0 +1,21 @@
+{
+    "index": {
+        "tpl": "hotSpring",
+        "title": "xxx滑雪",
+        "style": {
+            "themeColor": "#fff"
+        },
+        "navs": [{
+            "txt": "介绍",
+            "icon": "xxx",
+            "action": {
+                "type": "module",
+                "value": "introduce"
+            }
+        }]
+    },
+    "modules": {
+        "introduce": {},
+        "gallary": {}
+    }
+}

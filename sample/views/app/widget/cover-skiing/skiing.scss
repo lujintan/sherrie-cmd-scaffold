@@ -1,0 +1,94 @@
+.mp-spot-skiing {
+    height: 100%;
+    background: no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+    .swiper-container {
+        position: relative;
+        left: -3%;
+        width: 106%;
+        height: 100%;
+    }
+    ul {
+        li, a {
+            display: block;
+            background-repeat: no-repeat;
+            background-size: 100% 80px;
+        }
+        li {
+            margin-top: 20px;
+            opacity: 1;
+            -webkit-transform: rotate(24deg) skew(25deg) translate3d(0px, 0px, 0px);
+        }
+        a {
+            position: relative;
+            left: -8%;
+            width: 116%;
+            height: 80px;
+            outline: none;
+            background-size: cover;
+            -webkit-transform: skew(-25deg);
+            -webkit-tap-highlight-color: none;
+        }
+        .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 80px;
+            margin: 1.5rem 0 0 10%;
+            -webkit-transform: skew(-15deg);
+            color: white;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+            h2 {
+                font-size: 2.2rem;
+                line-height: 3rem;
+                font-weight: normal;
+            }
+            h3 {
+                font-size: 1.8rem;
+                line-height: 1.1rem;
+                text-indent: 1.2rem;
+                font-weight: lighter;
+                opacity: 0.6;
+            }
+        }
+        .shade {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 82px;
+            opacity: 0.54;
+        }
+        li:nth-child(3n) .shade {
+            background-color: #19051d;
+        }
+        li:nth-child(3n+1) .shade {
+            background-color: #173a5d;
+        }
+        li:nth-child(3n+2) .shade {
+            background-color: #054241;
+        }
+    }
+    .swiper-slide {
+        opacity: 0;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    .swiper-slide-show {
+        opacity: 1;
+        a {
+            -webkit-animation: swiperInnerAnimation 0.5s ease;
+            -webkit-transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-perspective: 1000;
+            -moz-perspective: 1000;
+            -ms-perspective: 1000;
+            perspective: 1000;
+        }
+    }
+}

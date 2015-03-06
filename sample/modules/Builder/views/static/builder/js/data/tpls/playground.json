@@ -1,0 +1,148 @@
+{
+    "index": {
+        "tpl": "playground",
+        "title": "游乐场",
+        "style": {
+            "themeColor": "#00a3e7",
+            "layout": "fullcolumn"
+        },
+        "navs": [{
+            "text": "景区门票",
+            "name": "tickets",
+            "action": {
+                "type": "module",
+                "value": "tickets"
+            }
+        }, {
+            "text": "景区介绍",
+            "name": "introduce",
+            "action": {
+                "type": "module",
+                "value": "introduce"
+            }
+        }, {
+            "text": "景区天气",
+            "name": "weather",
+            "action": {
+                "value": "weather",
+                "type": "module"
+            }
+        }, {
+            "text": "景区路线",
+            "name": "routes",
+            "action": {
+                "value": "routes",
+                "type": "module"
+            }
+        }, {
+            "text": "景区图片",
+            "name": "gallery",
+            "action": {
+                "type": "module",
+                "value": "gallery"
+            }
+        }, {
+            "text": "热门景点",
+            "name": "spotlist",
+            "action": {
+                "value": "spotlist",
+                "type": "module"
+            }
+        }, {
+            "text": "景区热力图",
+            "name": "heatmap",
+            "action": {
+                "value": "heatmap",
+                "type": "module"
+            }
+        }, {
+            "text": "景区导览",
+            "name": "tourguide",
+            "action": {
+                "type": "module",
+                "value": "tourguide"
+            }
+        }, {
+            "text": "我的订单",
+            "name": "ordercenter",
+            "action": {
+                "type": "module",
+                "value": "ordercenter"
+            }
+        }]
+    },
+    "modules": {
+        "introduce": {
+            "name": "北京欢乐谷",
+            "address": "北京市朝阳区",
+            "traffic": "公共交通 公交车 从天安门乘52路到劲松桥东站转乘41路抵达厚俸桥南（北京欢乐谷）站下车即到；或乘674、680、687至终点站北京华侨城南站，下车后向北步行数分钟即到",
+            "open": "09时00分 -17时00分",
+            "best": "01月01日 - 12月31日",
+            "detail": "北京欢乐谷是华侨城集团以20年的专业积累，用四年时间倾心打造的主题生态乐园，它是北京文化产业的区域龙头，是中国现代旅游的经典之作。它以时尚、动感、欢乐、梦幻的人文魅力，成为北京体验旅游的重要标志",
+            "image": "http://bs.baidu.com/my-cms-files/cms_file_0016c1bbe9aea76ac93afa7832e8775a"
+        },
+        "gallery": {
+            "from": "customer",
+            "source": {
+                "customer": {
+                    "items": [{
+                        "images": [{
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_72c2fdd4adb7f65c295c3f6edb3e3aaa"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_3738818e63e9ee114c3cd10d4ede2d92"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_82ed87a838a2ef8677d5c4ba7c4623ba"
+                        }],
+                        "name": "欢乐谷"
+                    }, {
+                        "images": [{
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_d80d0379587867ecd68ad30b95909648"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_b8e49915484481f527f69d8d95ac5878"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_2f09c3e63b5900a8904df7a8bad6095b"
+                        }],
+                        "name": "欢乐谷游玩"
+                    }]
+                }
+            }
+        },
+        "tourguide": {
+            "image": "http://bs.baidu.com/my-cms-files/cms_4f6a306c94af679657ced7273b5ad4ea"
+        },
+        "routes": {
+            "outerTraffic": "公共交通 公交车 从天安门乘52路到劲松桥东站转乘41路抵达厚俸桥南（北京欢乐谷）站下车即到；或乘674、680、687至终点站北京华侨城南站，下车后向北步行数分钟即到",
+            "innerTraffic": "无",
+            "tourAddress": {
+                "address": {
+                    "province": "131_北京市",
+                    "city": "131_北京市",
+                    "regional": "2898_朝阳区",
+                    "street": "欢乐谷"
+                },
+                "point": {
+                    "lat": 39.872999,
+                    "lng": 116.496648
+                }
+            }
+        },
+        "heatmap": {
+            "province": "北京",
+            "city": "北京",
+            "poiname": "欢乐谷",
+            "centerPoint": "116.500881,39.874205",
+            "x": 116.500881,
+            "y": 39.874205
+        },
+        "weather": {
+            "province": "北京",
+            "city": "北京"
+        }
+    }
+}

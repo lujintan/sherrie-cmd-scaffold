@@ -1,0 +1,75 @@
+.mp-create-container {
+  margin: 0px auto 0px auto;
+  width: 1240px;
+  border: 1px solid #666;
+}
+.mp-create-lists {
+  float: left;
+  width: 228px;
+  height: 360px;
+  background-color: yellow;
+  margin: 10px;
+}
+.mp-create-lists:hover {
+  float: left;
+  width: 228px;
+  height: 360px;
+  background-color: yellow;
+  margin: 10px;
+  box-shadow: 4px 4px 2px #888888;
+  cursor: pointer;
+}
+.mp-create-lists-selected {
+  float: left;
+  width: 228px;
+  height: 360px;
+  background-color: yellow;
+  margin: 10px;
+  box-shadow: 4px 4px 2px #666666;
+}
+.mp-create-selected-show {
+  text-align: center;
+  color: red;
+}
+.mp-create-selected-color {
+  margin: auto;
+  width: 778px;
+}
+.mp-create-select-color {
+  padding: 17px 28px 5px 28px;
+  float: left;
+}
+.mp-create-color {
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+  float: left;
+}
+.mp-create-color:hover {
+  box-shadow: 2px 2px 1px #888888;
+  cursor: pointer;
+}
+.mp-create-color-show {
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+  float: left;
+  box-shadow: 2px 2px 1px #666666;
+  cursor: pointer;
+}
+.mp-create-button {
+  margin: auto;
+  text-align: center;
+}
+.mp-create-button button {
+  border: 0px;
+  background: #bcda47;
+  width: 200px;
+  height: 30px;
+}
+.mp-create-button button:hover {
+  border: 0px;
+  background: #A6C628;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

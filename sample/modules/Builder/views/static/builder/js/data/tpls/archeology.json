@@ -1,0 +1,171 @@
+{
+    "index": {
+        "tpl": "archeology",
+        "title": "古迹",
+        "style": {
+            "themeColor": "#5e7489",
+            "layout": "fullcolumn"
+        },
+        "navs": [{
+            "text": "景区门票",
+            "name": "tickets",
+            "action": {
+                "type": "module",
+                "value": "tickets"
+            }
+        }, {
+            "text": "景区介绍",
+            "name": "introduce",
+            "action": {
+                "type": "module",
+                "value": "introduce"
+            }
+        }, {
+            "text": "景区天气",
+            "name": "weather",
+            "action": {
+                "value": "weather",
+                "type": "module"
+            }
+        }, {
+            "text": "景区路线",
+            "name": "routes",
+            "action": {
+                "value": "routes",
+                "type": "module"
+            }
+        }, {
+            "text": "景区图片",
+            "name": "gallery",
+            "action": {
+                "type": "module",
+                "value": "gallery"
+            }
+        }, {
+            "text": "热门景点",
+            "name": "spotlist",
+            "action": {
+                "value": "spotlist",
+                "type": "module"
+            }
+        }, {
+            "text": "景区热力图",
+            "name": "heatmap",
+            "action": {
+                "value": "heatmap",
+                "type": "module"
+            }
+        }, {
+            "text": "景区导览",
+            "name": "tourguide",
+            "action": {
+                "type": "module",
+                "value": "tourguide"
+            }
+        }, {
+            "text": "我的订单",
+            "name": "ordercenter",
+            "action": {
+                "type": "module",
+                "value": "ordercenter"
+            }
+        }]
+    },
+    "modules": {
+        "introduce": {
+            "name": "故宫",
+            "address": "北京东城区景山前街4号",
+            "traffic": "公交：1、2、4、5、8、10、20、52、22、120、728、802天安门西或天安门东下车\n地铁（天安门东站、天安门西站）：9、17、22、44、48、59、66、110、126、301、646、673、692、729、803、808、901、特4、特7、BRT1前门下车或101、103、109、685、814、846路故宫下车，60路东华门下车",
+            "open": "09时00分 -17时00分",
+            "best": "01月01日 - 12月31日",
+            "detail": "北京故宫，旧称为紫禁城。位于北京中轴线的中心，是明、清两代的皇宫，占地面积约为72万平方米，建筑面积约为15万平方米，是世界上现存规模最大、保存最为完整的木质结构的宫殿型建筑。\n北京故宫于明成祖朱棣于西元1406年开始建设，明代永乐十八年（1420年）建成。北京故宫是明、清两代的皇宫，两代24位皇帝在此处理政务和生活起居的地方。它是汉族宫殿建筑之精华，无与伦比的古代建筑杰作。故宫同时还入选了世界文化遗产，全国重点文物保护单位，国家AAAAA级旅游景区",
+            "image": "http://bs.baidu.com/my-cms-files/cms_file_b8e434bc112b4083077e5a2099130901"
+        },
+        "gallery": {
+            "from": "customer",
+            "source": {
+                "customer": {
+                    "items": [{
+                        "images": [{
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_31dfb729e0620eca46e32cd8eb521f57"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_7c2c481ece521312fcee7c73d49a3e94"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_910c6a72a882784722a8f1d8d5c7084c"
+                        }],
+                        "name": "故宫全景"
+                    }, {
+                        "images": [{
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_633d83b4b63d114175d4914cbfa5ffa1"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_996578dcbaeeba6a0483d3be11605203"
+                        }, {
+                            "title": "",
+                            "url": "http://bs.baidu.com/my-cms-files/cms_file_9a7a03f228dd053230d256c9a537b833"
+                        }],
+                        "name": "故宫的小角落"
+                    }]
+                }
+            }
+        },
+        "tourguide": {
+            "image": "http://bs.baidu.com/my-cms-files/cms_file_6e1ba4213a0b39c9b3e2cf7c1b46ce58"
+        },
+        "routes": {
+            "outerTraffic": "坐地铁，天安门东下车，往西走一点，穿过天安门城楼，就是故宫南门了，午门。\n也可以从景山北海玩出来，走故宫北门进去~~坐111，101，北海后门~~",
+            "innerTraffic": "无",
+            "tourAddress": {
+                "address": {
+                    "province": "131_北京市",
+                    "city": "131_北京市",
+                    "regional": "1551_东城区",
+                    "street": "故宫"
+                },
+                "point": {
+                    "lat": 39.921936,
+                    "lng": 116.403367
+                }
+            }
+        },
+        "spotlist": {
+            "from": "customer",
+            "source": {
+                "customer": {
+                    "items": [{
+                        "name": "太和殿",
+                        "image": "http://bs.baidu.com/my-cms-files/cms_file_9095319023ae19daccddcdfd6212801b",
+                        "brief": "太和殿俗称金銮殿，为汉族宫殿建筑之精华，东方三大殿 之",
+                        "introduce": "太和殿俗称金銮殿，为汉族宫殿建筑之精华，东方三大殿 之一。中国现存最大的木结构大殿。位于北京紫禁城（故宫）南北主轴线的显要位置，明永乐十八年（1420年）建成，称奉天殿。明嘉靖四十一年（1562年）改称皇极殿，清顺治二年（1645年）改今名。建成后屡遭焚毁，多次重建，今殿为清康熙三十四年(1695年)重建后的形制"
+                    }, {
+                        "name": "咸福宫",
+                        "image": "http://bs.baidu.com/my-cms-files/cms_file_d8d45ca6fee3e924de82a84664d80be2",
+                        "brief": "咸福宫是始建于明代的汉族宫殿建筑，属于故宫内廷西六宫之一",
+                        "introduce": "咸福宫是始建于明代的汉族宫殿建筑，属于故宫内廷西六宫之一，为后妃所居，于明永乐十八年（1420年）建成，初名寿安宫。嘉靖十四年（1535年）更名为咸福宫。前殿为行礼升座之处，后殿为寝宫。虽为后妃居所，但仍有皇帝在此居住。乾隆年间，便改为皇帝偶尔起居之处。乾隆驾崩后，嘉庆帝住于咸福宫守孝同年十月才移居养心殿。此后咸福宫一度恢复为妃嫔居所。道光三十年（1850年），咸丰皇帝住于咸福宫为道光皇帝守孝，守孝期满后仍经常在此居住"
+                    }, {
+                        "name": "景仁宫",
+                        "image": "http://bs.baidu.com/my-cms-files/cms_file_f5f197b9993390c3993a3b8ea883cb92",
+                        "brief": "景仁宫是明代汉族宫殿建筑，属于内廷东六宫之一",
+                        "introduce": "景仁宫是明代汉族宫殿建筑，属于内廷东六宫之一。明永乐十八年(1420年)建成，初曰长安宫，嘉靖十四年(1535年)更名景仁宫。清代沿用明朝旧称，于顺治十二年(1655年)重修，道光十五年(1835年)、光绪十六年(1890年)先后修缮"
+                    }]
+                }
+            }
+        },
+        "heatmap": {
+            "province": "北京",
+            "city": "北京",
+            "poiname": "故宫",
+            "centerPoint": "116.4035355,39.923482",
+            "x": 116.4035355,
+            "y": 39.923482
+        },
+        "weather": {
+            "province": "北京",
+            "city": "北京"
+        }
+    }
+}

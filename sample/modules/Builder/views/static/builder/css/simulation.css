@@ -1,0 +1,351 @@
+.mp-simulation-module-show {
+  padding: 20px 20px 0px 20px;
+  width: 312px;
+  height: 602px;
+  float: left;
+  border: 2px solid #ECEDEF;
+  border-top: 0px;
+  border-bottom-radius: 45px;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+.mp-simulation-module-show .mp-simulation-module-iframe-container {
+  /*background: url('/static/builder/images/bg-phone.png') 0 0 no-repeat;*/
+
+  height: 550px;
+  width: 310px;
+  /*margin: 0 auto;*/
+
+  border: 1px solid #DFDFDF;
+}
+.mp-simulation-module-show .mp-simulation-module-iframe-container iframe {
+  width: 310px;
+  height: 550px;
+}
+.mp-simulation-module-show .mp-simulation-module-pre-text {
+  width: 103px;
+  height: 27px;
+  margin: 12px 92px 0px 6px;
+  float: left;
+  font-size: 12px;
+  line-height: 2.0;
+  color: #84888D;
+  background: url('/static/builder/images/simulation/widget.png') no-repeat;
+  background-position: -5px -122px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.mp-simulation-module-show .mp-simulation-module-pre-text:hover {
+  overflow: visible;
+}
+.mp-simulation-module-show .mp-simulation-module-pre-text .mp-simulation-module-qrcode-bg {
+  transform: scale(1.6);
+  width: 102px;
+  height: 107px;
+  padding: 15px 10px 0 10px;
+  position: absolute;
+  top: -156px;
+  left: 26px;
+  position: absolute;
+  background: url('/static/builder/images/simulation/widget.png') no-repeat;
+  background-position: 0px 0px;
+}
+.mp-simulation-module-show .mp-simulation-module-pre-text .mp-simulation-module-qrcode {
+  width: 100px;
+  height: 107px;
+  padding: 15px 10px 0 10px;
+  position: absolute;
+  top: -188px;
+  left: -8px;
+  position: absolute;
+  z-index: 10;
+}
+.mp-simulation-module-show .mp-simulation-module-style-button {
+  cursor: pointer;
+  width: 103px;
+  height: 27px;
+  margin-top: 12px;
+  background: url('/static/builder/images/simulation/widget.png') no-repeat;
+  background-position: -192px -122px;
+  float: left;
+}
+.mp-simulation-style-bg {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+  z-index: 99;
+}
+.mp-simulation-style-container {
+  font-family: '宋体';
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+  z-index: 100;
+}
+.mp-simulation-style-container .mp-simulation-style-option {
+  width: 734px;
+  height: 523px;
+  margin: 70px auto 0px auto;
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-close {
+  text-align: right;
+  height: 30px;
+  width: 725px;
+  margin: 0px auto 0px auto;
+  line-height: 2.2;
+  font-size: 18px;
+  color: #666;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-title {
+  padding: 0px 10px 5px 0px;
+  width: 674px;
+  margin: -25px auto 0px auto;
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  border-bottom: solid 1px #dfdfdf;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  font-family: '宋体';
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show {
+  width: 820px;
+  margin: auto;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select {
+  width: 310px;
+  margin: 0px 14px 0px 20px;
+  overflow: hidden;
+  float: left;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative {
+  width: 130px;
+  height: 189px;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  margin: 17px 10px 0 10px;
+  cursor: pointer;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative:hover {
+  border: 1px solid #CCC;
+  box-shadow: 0px 0px 6px 0px #CCC;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative .mp-alternative-show {
+  border: 1px solid #EFEFEF;
+  float: left;
+  margin: 4px 0px 0px 29px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative .mp-alternative-show .mp-alternative-selected {
+  display: inline-block;
+  border-radius: 10px;
+  background: #498BFC;
+  width: 10px;
+  height: 10px;
+  margin-top: 5px;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative .mp-alternative-text {
+  margin: 6px 0px 0px 2px;
+  float: left;
+  font-family: '宋体';
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative h4 {
+  font-size: 14px;
+  height: 30px;
+  line-height: 1.4;
+  font-weight: 400;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  color: #666;
+  border-bottom: 1px solid #e5e5e5;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative .mp-simulation-style-fullcolumn {
+  list-style: none;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative .mp-simulation-style-fullcolumn li {
+  height: 25px;
+  margin: 6px 0px 0px 0px;
+  background-color: #CCC;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative .mp-simulation-style-card {
+  list-style: none;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-select .mp-simulation-alternative .mp-simulation-style-card li {
+  height: 25px;
+  margin: 6px 5px 0px 5px;
+  background-color: #CCC;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-show {
+  border: 1px solid #e5e5e5;
+  margin-top: 28px;
+  width: 367px;
+  height: 357px;
+  overflow: hidden;
+  float: left;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-text {
+  padding: 0px 10px 0px 0px;
+  width: 290px;
+  margin: 0px auto 0px auto;
+  font-size: 12px;
+  color: #a4a9ae;
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  font-family: '宋体';
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select {
+  width: 290px;
+  padding: 0px 10px 0px 10px;
+  margin: 0px auto 0px auto;
+  list-style: none;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select .mp-simulation-color-list {
+  width: 34px;
+  height: 34px;
+  float: left;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 15px 6px 5px 6px;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select .mp-simulation-color-list .mp-simualtion-color-selected {
+  width: 34px;
+  height: 34px;
+  margin: 5px auto;
+  display: block;
+  background: url('/static/builder/images/simulation/selected_bg.png') no-repeat;
+  background-position: 11px 8px;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#00a3e7"] {
+  background-color: #00a3e7;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#5e7489"] {
+  background-color: #5e7489;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#2dbb69"] {
+  background-color: #2dbb69;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#2eb6aa"] {
+  background-color: #2eb6aa;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#222a2e"] {
+  background-color: #222a2e;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#1e75c9"] {
+  background-color: #1e75c9;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#7f30b7"] {
+  background-color: #7f30b7;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#e700b6"] {
+  background-color: #e700b6;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#f22857"] {
+  background-color: #f22857;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#d44a47"] {
+  background-color: #d44a47;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#ff7800"] {
+  background-color: #ff7800;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-color-select li[data="#ff9a00"] {
+  background-color: #ff9a00;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-pre {
+  margin: 0 0 0 18px;
+  overflow: hidden;
+  list-style: none;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-pre li {
+  width: 146px;
+  height: 217px;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  margin: 60px 10px 0px 6px;
+  cursor: pointer;
+  background-image: url('/static/builder/images/simulation/pre-bg.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-pre li div {
+  height: 50px;
+  width: 144px;
+  margin: auto;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-pre li h4 {
+  width: 144px;
+  height: 16px;
+  margin: 2px auto 0;
+  text-align: center;
+  font-family: '宋体';
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-pre li h4 span {
+  -webkit-transform: scale(0.6);
+  line-height: 14px;
+  display: block;
+  width: 100%;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-pre li span {
+  width: 48px;
+  float: left;
+  height: 10px;
+  line-height: 18px;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-pre li em {
+  -webkit-transform: scale(0.7);
+  text-align: center;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-pre li button {
+  width: 121px;
+  height: 17px;
+  border-radius: 1px;
+  margin: 121px auto 0;
+  display: block;
+  border: 0px;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-style-select-show .mp-simulation-style-pre-text {
+  text-align: center;
+  margin-top: 30px;
+  color: #a4a9ae;
+  font-weight: 700;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-buttons {
+  width: 288px;
+  margin-left: 287px;
+  margin-top: 40px;
+}
+.mp-simulation-style-container .mp-simulation-style-option .mp-simulation-buttons .mp-simulation-submit {
+  border-color: #498BFC;
+  background: #498BFC;
+  color: #FFF;
+  margin-right: 12px;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
