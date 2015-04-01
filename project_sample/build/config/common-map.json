@@ -1,0 +1,78 @@
+{
+    "res": {
+        "common:page/layout.tpl": {
+            "uri": "/template/common/page/layout.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "common:plugin/static/bigrender.js": {
+            "uri": "/plugin/static/bigrender.js",
+            "type": "js"
+        },
+        "common:static/css/main.scss": {
+            "uri": "/static/common/css/main.css",
+            "type": "css",
+            "pkg": "common:p1"
+        },
+        "common:static/js/lib/fastclick.js": {
+            "uri": "/static/common/js/lib/fastclick.js",
+            "type": "js",
+            "pkg": "common:p0"
+        },
+        "common:static/js/lib/lodash.min.js": {
+            "uri": "/static/common/js/lib/lodash.min.js",
+            "type": "js",
+            "pkg": "common:p0"
+        },
+        "common:static/js/lib/rosetta.js": {
+            "uri": "/static/common/js/lib/rosetta.js",
+            "type": "js",
+            "pkg": "common:p0"
+        },
+        "common:static/js/lib/zepto.min.js": {
+            "uri": "/static/common/js/lib/zepto.min.js",
+            "type": "js",
+            "pkg": "common:p0"
+        },
+        "common:widget/loading/loading.js": {
+            "uri": "/static/common/widget/loading/loading.js",
+            "type": "js",
+            "deps": [
+                "common:widget/loading/loading.scss"
+            ]
+        },
+        "common:widget/loading/loading.scss": {
+            "uri": "/static/common/widget/loading/loading.css",
+            "type": "css"
+        },
+        "common:widget/loading/loading.tpl": {
+            "uri": "common/widget/loading/loading.tpl",
+            "type": "tpl",
+            "deps": [
+                "common:widget/loading/loading.js",
+                "common:widget/loading/loading.scss"
+            ]
+        }
+    },
+    "pkg": {
+        "common:p0": {
+            "uri": "/static/common/base.js",
+            "type": "js",
+            "has": [
+                "common:static/js/lib/fastclick.js",
+                "common:static/js/lib/lodash.min.js",
+                "common:static/js/lib/rosetta.js",
+                "common:static/js/lib/zepto.min.js"
+            ]
+        },
+        "common:p1": {
+            "uri": "/static/common/base.css",
+            "type": "css",
+            "has": [
+                "common:static/css/main.scss"
+            ]
+        }
+    }
+}

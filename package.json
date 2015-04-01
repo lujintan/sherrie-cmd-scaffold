@@ -1,26 +1,32 @@
 {
-    "name": "sherrie-cmd-scaffold",
-    "version": "0.0.3",
-    "description": "create the base code",
-    "main": "./main.js",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/lujintan/sherrie-cmd-scaffold.git"
-    },
-    "keywords": [
-        "sherrie",
-        "command",
-        "scaffold"
-    ],
-    "auth": "lujintan",
-    "email": "yingxuetan@163.com",
-    "license": "https://github.com/lujintan/sherrie-cmd-scaffold/blob/master/LICENSE",
-    "bugs": {
-        "url": "https://github.com/lujintan/sherrie-cmd-scaffold/issues"
-    },
-    "homepage": "https://github.com/lujintan/sherrie-cmd-scaffold",
-    "dependencies": {
-        "filefactory": "*",
-        "q": "1.2.0"
-    }
+  "name": "sherrie-cmd-scaffold",
+  "version": "0.0.21",
+  "description": "create the base code",
+  "main": "./main.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lujintan/sherrie-cmd-scaffold.git"
+  },
+  "keywords": [
+    "sherrie",
+    "command",
+    "scaffold"
+  ],
+  "auth": "lujintan",
+  "email": "yingxuetan@163.com",
+  "license": "https://github.com/lujintan/sherrie-cmd-scaffold/blob/master/LICENSE",
+  "bugs": {
+    "url": "https://github.com/lujintan/sherrie-cmd-scaffold/issues"
+  },
+  "homepage": "https://github.com/lujintan/sherrie-cmd-scaffold",
+  "dependencies": {
+    "filefactory": "*",
+    "q": "1.2.0"
+  },
+  "gitHead": "8db6fd83e0c45429269d122de238d47c6a9c1c3b",
+  "readme": "ERROR: No README data found!",
+  "_id": "sherrie-cmd-scaffold@0.0.15",
+  "scripts": {},
+  "_shasum": "0e96097569642215b961bc13f0cdb9e51c8b3083",
+  "_from": "sherrie-cmd-scaffold@0.0.15"
 }

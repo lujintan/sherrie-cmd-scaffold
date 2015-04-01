@@ -1,0 +1,13 @@
+.header-start {
+  background-color: #6f5499;
+  color: #cdbfe3; }
+  .header-start h1 {
+    margin-top: 0;
+    font-size: 60px;
+    color: white;
+    line-height: 60px; }
+  .header-start p {
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 24px; }

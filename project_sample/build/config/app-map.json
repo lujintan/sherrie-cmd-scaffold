@@ -1,0 +1,179 @@
+{
+    "res": {
+        "app:page/base.tpl": {
+            "uri": "/template/app/page/base.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "app:page/doc.tpl": {
+            "uri": "/template/app/page/doc.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "app:page/gvars.tpl": {
+            "uri": "/template/app/page/gvars.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "app:page/home.tpl": {
+            "uri": "/template/app/page/home.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "app:page/start.tpl": {
+            "uri": "/template/app/page/start.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "app:static/css/app/page.scss": {
+            "uri": "/static/app/css/app/page.css",
+            "type": "css"
+        },
+        "app:static/css/core/_mixins.scss": {
+            "uri": "/static/app/css/core/_mixins.css",
+            "type": "css"
+        },
+        "app:static/css/core/bootstrap.css": {
+            "uri": "/static/app/css/core/bootstrap.css",
+            "type": "css"
+        },
+        "app:static/js/app/app.js": {
+            "uri": "/static/js/app/app.js",
+            "type": "js",
+            "pkg": "app:p0"
+        },
+        "app:static/js/app/init.js": {
+            "uri": "/static/app/js/app/init.js",
+            "type": "js",
+            "deps": [
+                "app:static/js/core/utils.js",
+                "app:static/js/app/app.js"
+            ],
+            "pkg": "app:p0"
+        },
+        "app:static/js/core/bootstrap.min.js": {
+            "uri": "/static/app/js/core/bootstrap.min.js",
+            "type": "js"
+        },
+        "app:static/js/core/utils.js": {
+            "uri": "/static/js/core/utils.js",
+            "type": "js",
+            "pkg": "app:p0"
+        },
+        "app:widget/content-doc/content-doc.js": {
+            "uri": "/static/app/widget/content-doc/content-doc.js",
+            "type": "js",
+            "deps": [
+                "app:widget/content-doc/content-doc.scss"
+            ]
+        },
+        "app:widget/content-doc/content-doc.scss": {
+            "uri": "/static/app/widget/content-doc/content-doc.css",
+            "type": "css"
+        },
+        "app:widget/content-doc/content-doc.tpl": {
+            "uri": "app/widget/content-doc/content-doc.tpl",
+            "type": "tpl",
+            "deps": [
+                "app:widget/content-doc/content-doc.js",
+                "app:widget/content-doc/content-doc.scss"
+            ]
+        },
+        "app:widget/content-home/content-home.scss": {
+            "uri": "/static/app/widget/content-home/content-home.css",
+            "type": "css"
+        },
+        "app:widget/content-home/content-home.tpl": {
+            "uri": "app/widget/content-home/content-home.tpl",
+            "type": "tpl",
+            "deps": [
+                "app:widget/content-home/content-home.scss"
+            ]
+        },
+        "app:widget/content-start/content-start.tpl": {
+            "uri": "app/widget/content-start/content-start.tpl",
+            "type": "tpl"
+        },
+        "app:widget/header-doc/header-doc.scss": {
+            "uri": "/static/app/widget/header-doc/header-doc.css",
+            "type": "css"
+        },
+        "app:widget/header-doc/header-doc.tpl": {
+            "uri": "app/widget/header-doc/header-doc.tpl",
+            "type": "tpl",
+            "deps": [
+                "app:widget/header-doc/header-doc.scss"
+            ]
+        },
+        "app:widget/header-home/header-home.scss": {
+            "uri": "/static/app/widget/header-home/header-home.css",
+            "type": "css"
+        },
+        "app:widget/header-home/header-home.tpl": {
+            "uri": "app/widget/header-home/header-home.tpl",
+            "type": "tpl",
+            "deps": [
+                "app:widget/header-home/header-home.scss"
+            ]
+        },
+        "app:widget/header-start/header-start.js": {
+            "uri": "/static/app/widget/header-start/header-start.js",
+            "type": "js",
+            "deps": [
+                "app:widget/header-start/header-start.scss"
+            ]
+        },
+        "app:widget/header-start/header-start.scss": {
+            "uri": "/static/app/widget/header-start/header-start.css",
+            "type": "css"
+        },
+        "app:widget/header-start/header-start.tpl": {
+            "uri": "app/widget/header-start/header-start.tpl",
+            "type": "tpl",
+            "deps": [
+                "app:widget/header-start/header-start.js",
+                "app:widget/header-start/header-start.scss"
+            ]
+        },
+        "app:widget/navigation/navigation.scss": {
+            "uri": "/static/app/widget/navigation/navigation.css",
+            "type": "css",
+            "pkg": "app:p1"
+        },
+        "app:widget/navigation/navigation.tpl": {
+            "uri": "app/widget/navigation/navigation.tpl",
+            "type": "tpl",
+            "deps": [
+                "app:widget/navigation/navigation.scss"
+            ]
+        }
+    },
+    "pkg": {
+        "app:p0": {
+            "uri": "/static/app/app.js",
+            "type": "js",
+            "has": [
+                "app:static/js/core/utils.js",
+                "app:static/js/app/app.js",
+                "app:static/js/app/init.js"
+            ]
+        },
+        "app:p1": {
+            "uri": "/static/app/app.css",
+            "type": "css",
+            "has": [
+                "app:widget/navigation/navigation.scss"
+            ]
+        }
+    }
+}

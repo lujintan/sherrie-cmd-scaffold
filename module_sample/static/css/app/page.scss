@@ -1,0 +1,27 @@
+@import "../core/_mixins";
+.slide-show{
+    @include transform(none !important);
+    z-index: 250;
+}
+.slide-base{
+    @include transform(translateX(100%));
+    @include transition(0.3s -webkit-transform ease-in-out);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+.header{
+    margin-top:-20px;
+    margin-bottom:60px;
+    color:white;
+    background: #222;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: left;
+    position: relative;
+}
