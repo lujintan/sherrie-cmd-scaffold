@@ -1,11 +1,3 @@
-/**
- * @author gaojiexuan@baidu.com
- *
- * 每位工程师都有保持代码优雅的义务
- */
-
-
-
 var app = {
     ele: 'body',
 
@@ -83,14 +75,14 @@ var app = {
     appPageInit: function () {
         var self = this;
 
-        appPage.start({
+        Rosetta.appPage.start({
             containerId: 'pager',
             pagelets: 'pager',
-            validate: /^[\w\W]*\/\?/,
+            validate: /^"http*/,
             cache: true
         });
 
-        appPage.on('onpagerenderstart', function(e) {
+        Rosetta.appPage.on('onpagerenderstart', function(e) {
             if ($preLoad.hasClass('slide-show')) {
                 $preLoad.removeClass('slide-show');
             }
@@ -103,7 +95,7 @@ var app = {
             }
         });
 
-        appPage.on('onpagerendercomplete', function(e) {
+        Rosetta.appPage.on('onpagerendercomplete', function(e) {
             self.changeClass();
             $loading.css('visibility', 'hidden');
         });
@@ -111,7 +103,7 @@ var app = {
 
         var pathname = _.utils.getRealPathname();
 
-        if (pathname === '') {
+        if (pathname === 'apppagepage') {
             $preLoad.addClass('slide-base').show();
         }
     },
@@ -123,7 +115,7 @@ var app = {
                 var $item = $(item),
                     url = $item.attr('href') || $item.attr('data-href');
 
-                appPage.redirect(url, {
+                Rosetta.appPage.redirect(url, {
                     replace: false,
                     containerId:'pre_load',
                     pagelets:'pre_load',
@@ -138,4 +130,4 @@ var app = {
 
 };
 
-module.exports = Ofa.Component(app);
+module.exports = Rosetta.Component(app);

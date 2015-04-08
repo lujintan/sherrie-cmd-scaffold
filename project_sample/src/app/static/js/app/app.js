@@ -2,7 +2,6 @@ var app = {
     ele: 'body',
 
     init: function() {
-        window.$doc = $(document);
         window.$body = $('body');
         window.$loading = $('#page-loading');
         window.$pager = $('#pager');
@@ -78,7 +77,7 @@ var app = {
         Rosetta.appPage.start({
             containerId: 'pager',
             pagelets: 'pager',
-            validate: /^"http*/,
+            validate: /^\//,
             cache: true
         });
 

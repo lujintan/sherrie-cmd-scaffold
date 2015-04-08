@@ -77,27 +77,35 @@
                     }
 
                     var curEl = this.el,
-                        events = this.events;
+                        events = this.events,
+                        self = this;
 
                     this.init();
 
                     for (var key in events) {
-                        var func = events[key],
-                            arr = key.split(' '),
-                            selector = arr[0],
-                            eventType = arr[1];
-
                         (function () {
+                            var cbfunc = events[key],
+                                arr = key.split(' '),
+                                selector = (arr.splice(0, arr.length - 1)).join(' '),
+                                eventType = arr[arr.length - 1];
+
+                            if (typeof cbfunc == 'string') {
+                                cbfunc = self[cbfunc];
+                            }
+
                             curEl.addEventListener(eventType, function (e) {
                                 var element = e.target,
                                     parent = element;
 
-                                while (parent !== document.body) {
+                                while (!!parent && parent !== document.body) {
                                     if (matchSelector(parent, selector)) {
                                         // 验证url, 可以自行配置url验证规则
                                         e.stopPropagation();
-                                        e.preventDefault();
-                                        func();
+
+                                        if (typeof cbfunc == 'function') {
+                                            cbfunc.call(self, e);
+                                        }
+
                                         return;
                                     } else {
                                         parent = parent.parentNode;
@@ -1352,7 +1360,6 @@ LazyLoad = (function (doc) {
      */
 
     function onPopState(e) {
-
         var currentUrl = getCurrentUrl();
 
         if (!curPageUrl || currentUrl === curPageUrl) {
@@ -1527,8 +1534,8 @@ LazyLoad = (function (doc) {
      * @param {HTMLElement} options[target]  触发跳转的DOM元素
      */
 
-    function redirect(url, options) {
-        url = getUrl(url);
+    function redirect(originUrl, options) {
+        url = getUrl(originUrl);
 
         // 如果url不变则不加载
         if(getCurrentUrl() === url) {
@@ -1570,7 +1577,7 @@ LazyLoad = (function (doc) {
         fetchPage(url, options, function(){
             if (options.forward) {
                 method = options.replace ? "replaceState" : "pushState";
-                window.history[method]({}, document.title, url);
+                window.history[method]({}, document.title, originUrl);
             }
         });
     }
@@ -1597,7 +1604,7 @@ LazyLoad = (function (doc) {
             for (var i = 0, len = pagelets.length; i < len; i++) {
                 pageletsParams.push('pagelets[]=' + pagelets[i]);
             }
-            url = (url.indexOf('?') === -1) ? url + '/?' + pageletsParams.join('&') : url + '&' + pageletsParams.join('&');
+            url = (url.indexOf('?') === -1) ? url + '?' + pageletsParams.join('&') : url + '&' + pageletsParams.join('&');
         }
 
         opt.lazyRender = options.lazyRender;

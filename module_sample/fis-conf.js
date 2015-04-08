@@ -39,3 +39,14 @@ fis.config.merge({
         }
     <%}%>
 });
+
+
+fis.config.get('roadmap.path').unshift({
+    reg: /\/static\/js\/app\/(?!.*[init]\.js$)[\s\S]+/,
+    isMod: true
+});
+
+fis.config.get('roadmap.path').unshift({
+    reg: /\/static\/js\/core\/(?!.*[invoke|ofa]\.js$)[\s\S]+/,
+    isMod: true
+});

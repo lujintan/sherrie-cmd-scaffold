@@ -1,10 +1,3 @@
-/**
- * @author gaojiexuan@baidu.com
- *
- * 每位工程师都有保持代码优雅的义务
- */
-
-
 var utils = {
     log: function (type, log) {
         clouda.lego.monitor.send("click",{

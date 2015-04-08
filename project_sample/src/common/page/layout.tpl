@@ -29,6 +29,10 @@
         {%block name="footer"%}
         {%/block%}
 
+        {%require name="common:static/js/lib/zepto.min.js"%}
+        {%require name="common:static/js/lib/fastclick.js"%}
+        {%require name="common:static/js/lib/lodash.min.js"%}
+
         {%block name="js_block"%}
         {%/block%}
 

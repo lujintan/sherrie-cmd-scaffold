@@ -1,6 +1,6 @@
 {
   "name": "sherrie-cmd-scaffold",
-  "version": "0.0.21",
+  "version": "0.0.25",
   "description": "create the base code",
   "main": "./main.js",
   "repository": {
