@@ -1,6 +1,6 @@
 {
   "name": "sherrie-cmd-scaffold",
-  "version": "0.0.25",
+  "version": "0.0.29",
   "description": "create the base code",
   "main": "./main.js",
   "repository": {
@@ -20,13 +20,15 @@
   },
   "homepage": "https://github.com/lujintan/sherrie-cmd-scaffold",
   "dependencies": {
+    "commander": "^2.7.1",
+    "ejs": "^2.3.1",
     "filefactory": "*",
     "q": "1.2.0"
   },
   "gitHead": "8db6fd83e0c45429269d122de238d47c6a9c1c3b",
   "readme": "ERROR: No README data found!",
-  "_id": "sherrie-cmd-scaffold@0.0.15",
+  "_id": "sherrie-cmd-scaffold@0.0.28",
   "scripts": {},
-  "_shasum": "0e96097569642215b961bc13f0cdb9e51c8b3083",
-  "_from": "sherrie-cmd-scaffold@0.0.15"
+  "_shasum": "b5f41656a75b4ab28148e8a60616d9425d4bee1a",
+  "_from": "sherrie-cmd-scaffold@*"
 }

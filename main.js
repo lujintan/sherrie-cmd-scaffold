@@ -3,6 +3,8 @@ var rl = require('readline');
 var path = require('path');
 var fs = require('fs');
 var Q = require('q');
+var commander = require('commander');
+var utils = require('./utils');
 
 module.exports = function(PluginAPI){
     PluginAPI.register('install', 'install project files', [], function(){
@@ -149,5 +151,18 @@ module.exports = function(PluginAPI){
 
             console.log('Module ' + moduleName + ' has been created!');
         });
+    });
+
+
+    PluginAPI.register('widget', 'create a widget called name', [], function(commander){
+
+        var args = commander.args;
+
+        if(!args[1]){
+            console.log('please specific the name of the widget');
+        }else {
+            utils.createWidget(args[1]);
+        }
+
     });
 };
