@@ -30,23 +30,25 @@ fis.config.merge({
     <%} else {%>
         //文件打包配置
         pack: {
-            '/static/app.js': [
+            '/static/<%= moduleName%>/app.js': [
                 /\/static\/js\/core\/\w*.js/,
                 /\/static\/js\/app\/\w*.js/,
                 /\/widget\/\w+\/[\w\W]*.js/
             ],
-            '/static/app.css': /\/widget\/\w+\/\w*.(?:scss|css)/
+            '/static/<%= moduleName%>/app.css': /\/widget\/\w+\/\w*.(?:scss|css)/
         }
     <%}%>
 });
 
 
 fis.config.get('roadmap.path').unshift({
-    reg: /\/static\/js\/app\/(?!.*[init]\.js$)[\s\S]+/,
+    reg: /\/static\/js\/app\/((?!.*[init]\.js$)[\s\S]+)/,
+    release: '/static/${namespace}/js/app/$1',
     isMod: true
 });
 
 fis.config.get('roadmap.path').unshift({
-    reg: /\/static\/js\/core\/(?!.*[invoke|ofa]\.js$)[\s\S]+/,
+    reg: /\/static\/js\/core\/((?!.*[invoke|ofa]\.js$)[\s\S]+)/,
+    release: '/static/${namespace}/js/core/$1',
     isMod: true
 });

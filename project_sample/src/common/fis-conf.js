@@ -29,11 +29,11 @@ fis.config.merge({
         }
     <%} else {%>
         pack: {
-            '/static/base.js': [
+            '/static/common/base.js': [
                 /\/static\/js\/lib\/[\w\W]*.js/,
                 /\/static\/js\/core\/[\w\W]*.js/
             ],
-            '/static/base.css': [
+            '/static/common/base.css': [
                 /\/static\/css\/\w*.(?:scss|css)/
             ]
         }
