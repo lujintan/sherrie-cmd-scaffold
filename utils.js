@@ -27,7 +27,11 @@ exports.createWidget = function(widgetName){
     if(fs.existsSync(destDir)){
         //    console.log('同名 widget 已经存在');
     }else{
-        fs.mkdirSync(destDir, 0755)
+        try{
+            fs.mkdirSync(destDir, 0755)
+        }catch (e){
+            return console.log('无法找到widget目录，请确认是在模块目录(如app/common等)下执行的该命令')
+        }
     }
 
     // copy file to destDir
