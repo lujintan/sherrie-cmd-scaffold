@@ -39,3 +39,5 @@ fis.config.merge({
         }
     <%}%>
 });
+
+fis.config.set('statics', '/static<%= project_name%>');

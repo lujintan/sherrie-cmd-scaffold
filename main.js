@@ -21,6 +21,7 @@ module.exports = function(PluginAPI){
             });
             return deferred.promise;
         };
+        var _projectName;
         var projectName;
         var author;
         var fid;
@@ -38,7 +39,10 @@ module.exports = function(PluginAPI){
             }
         };
 
-        _question('project name: ').then(_askProjectName).then(function(f){
+        _question('project name for deploy: ').then(function(n){
+            _projectName = n;
+            return _question('project name: ');
+        }).then(_askProjectName).then(function(f){
             console.log("FID OK!");
             fid = f;
             if (fid) {
@@ -61,7 +65,7 @@ module.exports = function(PluginAPI){
                 dest: projectName,
                 filter: '(fis-conf\\.js|layout\\.tpl)$',
                 data: {
-                    projectName: projectName,
+                    projectName: _projectName ? '/' + _projectName : '',
                     author: author,
                     fid: fid,
                     sampleRate: 1
@@ -89,6 +93,7 @@ module.exports = function(PluginAPI){
             return deferred.promise;
         };
 
+        var projectName;
         var moduleName;
         var version;
         var desc;
@@ -106,7 +111,12 @@ module.exports = function(PluginAPI){
             }
         };
         //start the command line guide
-        _question('module name: ').then(_askModuleName).then(function(v){
+
+        _question('project name:').then(function(pn){
+            projectName = pn;
+            console.log("project name OK!");
+            return _question('module name: ');
+        }).then(_askModuleName).then(function(v){
             version = v;
             console.log("Version OK!");
             return _question('description: ');
@@ -140,6 +150,7 @@ module.exports = function(PluginAPI){
                 dest: moduleName,
                 filter: '(fis-conf\\.js|layout\\.tpl)$',
                 data: {
+                    projectName: projectName ? '/' + projectName : '',
                     moduleName: moduleName,
                     version: version,
                     desc: desc,

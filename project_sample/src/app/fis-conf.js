@@ -42,12 +42,14 @@ fis.config.merge({
 
 fis.config.get('roadmap.path').unshift({
     reg: /\/static\/js\/app\/((?!.*[init]\.js$)[\s\S]+)/,
-    release: '/static/${namespace}/js/app/$1',
+    release: '/static<%= projectName%>/${namespace}/js/app/$1',
     isMod: true
 });
 
 fis.config.get('roadmap.path').unshift({
     reg: /\/static\/js\/core\/((?!.*[invoke|ofa]\.js$)[\s\S]+)/,
-    release: '/static/${namespace}/js/core/$1',
+    release: '/static<%= projectName%>/${namespace}/js/core/$1',
     isMod: true
 });
+
+fis.config.set('statics', '/static<%= projectName%>');
